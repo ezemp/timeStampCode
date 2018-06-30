@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <div class="jumbotron">
+            <h1 class="display-3"></h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            </div>
+        
+</head>
+<body>
+<div> <button type="button" id = "submit" class="btn btn-primary">Submit</button></div>
+<div>Employee Name: <input type = "text" id = "empName"> </div>
+<div>Role: <input type = "text" id = "empRole"></div>
+<div>Start Date: <input Type = "text" id = "empStart"></div>
+<div>Monthly Pay: <input type = "text" id = "empPay"></div>
+<table style="width:100%" class = "empTable">
+        <tr>
+          <th id = "name">Name</th>
+            <tr id = "rName"></tr>
+          <th id = "role">Role</th> 
+          <th id = "startDate">Start Date</th>
+          <th id "monthsWork"></th>
+          <th id = "monthRate">Monthly Pay Rate</th>
+          <th id = "totalPay">Total Earnings</th>
+        </tr>
+
+        <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyCC_8h7x4XCrMkytd3ComNzCQEj0ohU3nM",
+            authDomain: "ez-class-13.firebaseapp.com",
+            databaseURL: "https://ez-class-13.firebaseio.com",
+            projectId: "ez-class-13",
+            storageBucket: "ez-class-13.appspot.com",
+            messagingSenderId: "405288125859"
+          };
+          firebase.initializeApp(config);
+        </script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
